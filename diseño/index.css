@@ -26,15 +26,40 @@ body{
 
 .header-seccion-botones{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(168, 164, 164,0.3);
 }
 
 .boton-header{
-    width: 50px;
-    height: 50px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    /*transition: background, width 0.7s linear;*/
+    transition: 
+    width,
+    height,
+    background-color,
+    linear 0.2s;
 }
+
+.boton-header:hover{
+    transition: 
+    width,
+    height,
+    background-color,
+    linear 0.2s;
+
+    background-color: rgb(107, 8, 201,0.5);
+    width: 105px;
+    height: 105px;
+}
+
+/*@keyframes cambiar-color {
+    to {
+        background-color: rgba(238, 9, 238, 0.5);
+    }
+}*/
+
+
 
 .img-header{
     width: 100px;
